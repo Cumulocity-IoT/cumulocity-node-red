@@ -5,6 +5,20 @@
 
 * adjust versions of angular packages ([7c074d7](https://github.com/SoftwareAG/cumulocity-node-red/commit/7c074d71fb65aca431540341b301986de4876042))
 * resubscribe on reconnect to different core node ([#222](https://github.com/SoftwareAG/cumulocity-node-red/issues/222)) ([53f4a2e](https://github.com/SoftwareAG/cumulocity-node-red/commit/53f4a2e1441a80e46a314e3281c0a928ffd8c355))
+* use node 20 in semantic release workflow ([803542f](https://github.com/SoftwareAG/cumulocity-node-red/commit/803542ff0bb73d4cece676108364446ce72ce787))
+
+
+### Features
+
+* upgrade nodered to version 4.0.5 ([#227](https://github.com/SoftwareAG/cumulocity-node-red/issues/227)) ([21b676c](https://github.com/SoftwareAG/cumulocity-node-red/commit/21b676ca67079d4f0fccb3414aee94597790b2ab))
+
+# [2.4.0](https://github.com/SoftwareAG/cumulocity-node-red/compare/v2.3.0...v2.4.0) (2024-10-15)
+
+
+### Bug Fixes
+
+* adjust versions of angular packages ([7c074d7](https://github.com/SoftwareAG/cumulocity-node-red/commit/7c074d71fb65aca431540341b301986de4876042))
+* resubscribe on reconnect to different core node ([#222](https://github.com/SoftwareAG/cumulocity-node-red/issues/222)) ([53f4a2e](https://github.com/SoftwareAG/cumulocity-node-red/commit/53f4a2e1441a80e46a314e3281c0a928ffd8c355))
 
 
 ### Features
