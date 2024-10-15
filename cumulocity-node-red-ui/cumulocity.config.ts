@@ -13,7 +13,7 @@ export default {
     contextPath: "sag-ps-iot-pkg-node-red-ui",
     key: "sag-ps-iot-pkg-node-red-ui-application-key",
     tabsHorizontal: true,
-    dynamicOptionsUrl: "/apps/public/public-options/options.json",
+    dynamicOptionsUrl: true,
     isPackage: true,
     package: "blueprint",
     exports: [
