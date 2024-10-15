@@ -22,7 +22,17 @@ module.exports = function(RED) {
             node.send(msg);
         });
 
+        const handle = node.client.realtime.addHandshakeListener((msg) => {
+            if (msg.successful && msg.reestablish) {
+                this.log(`Resubscribing to: ${topic} on tenant: ${tenant} and url: ${baseUrl}`);
+                node.client.realtime.resubscribe(subscription);
+            }
+        });
+
         node.on('close', function() {
+            if (node.client && handle) {
+                node.client.realtime.removeListener(handle);
+            }
             if (node.client && subscription) {
                 node.client.realtime.unsubscribe(subscription);
             }
