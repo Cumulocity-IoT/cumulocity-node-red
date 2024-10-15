@@ -1,3 +1,4 @@
+import './i18n';
 import { applyOptions, loadOptions } from '@c8y/bootstrap';
 
 const barHolder: HTMLElement | null = document.querySelector('body > .init-load');
