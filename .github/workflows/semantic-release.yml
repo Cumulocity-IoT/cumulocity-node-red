@@ -39,4 +39,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GITHUB_URL: ${{ github.server_url }}
           HUSKY: 0
-        run: semantic-release
+        run: yarn semantic-release
