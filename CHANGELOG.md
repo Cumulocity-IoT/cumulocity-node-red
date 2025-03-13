@@ -5,6 +5,13 @@
 
 * upgrade Web SDK to 1021 ([#246](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/246)) ([91ed290](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/91ed29037c3d0f1f49d4ce684020bb16cfa10f75))
 
+# [2.5.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.4.0...v2.5.0) (2025-03-13)
+
+
+### Features
+
+* upgrade Web SDK to 1021 ([#246](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/246)) ([91ed290](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/91ed29037c3d0f1f49d4ce684020bb16cfa10f75))
+
 # [2.4.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.3.0...v2.4.0) (2024-10-15)
 
 
