@@ -4,8 +4,8 @@
   "name": "node-red",
   "provider": {
     "name": "Tristan Bastian",
-    "domain": "https://github.com/SoftwareAG/cumulocity-node-red",
-    "support": "https://github.com/SoftwareAG/cumulocity-node-red/issues"
+    "domain": "https://github.com/Cumulocity-IoT/cumulocity-node-red",
+    "support": "https://github.com/Cumulocity-IoT/cumulocity-node-red/issues"
   },
   "isolation": "PER_TENANT",
   "requiredRoles": [

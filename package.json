@@ -17,12 +17,12 @@
     "node": ">=20"
   },
   "bugs": {
-    "url": "https://github.com/SoftwareAG/cumulocity-node-red/issues"
+    "url": "https://github.com/Cumulocity-IoT/cumulocity-node-red/issues"
   },
-  "homepage": "https://github.com/SoftwareAG/cumulocity-node-red#readme",
+  "homepage": "https://github.com/Cumulocity-IoT/cumulocity-node-red#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SoftwareAG/cumulocity-node-red.git"
+    "url": "git+https://github.com/Cumulocity-IoT/cumulocity-node-red.git"
   },
   "workspaces": [
     "node-red-c8y-storage-plugin",
