@@ -9,13 +9,17 @@ The frontend folder contains an optional [Cumulocity WebSDK](https://cumulocity.
 
 ![Sample Image](images/c8y-nodered-sample.png)
 
+## Setup
+
+1. Upload and subscribe the node-red microservice on your tenant.
+2. The microservice introduces new permissions, make sure you've assigned these to a global role of your user.
+3. Upload the node red blueprint on your tenant if it was not automatically available in the `Extensions` of your tenant.
+4. Deploy the uploaded node-red blueprint on your tenant.
 
 ## Login
-~~With version 10.7.0.4 of the Cumulocity backend we are no longer able to use an OAuth session to access the Node-RED microservice. The Basic Auth login strategy has to be used to access Node-RED. You can still configure your tenant with the OAuth login strategy, just make sure that you are not selecting "Enforce OAuth Internal" if you want to use Node-RED. The Node-RED frontend will log your existing OAuth session out and will open a prompt for credentials to start a new Basic Auth session. Note that in case you have other windows/tabs opened for that specific tenant/domain, you are propably also going to be logged out within those windows. 
-In case you are then opening a new session within another window to one of the other cumulocity apps and login via OAuth this could cause some issues within the still open Node-RED tab (requests to Node-RED not succeeding).
-If you are still using Basic Auth as login strategy, you shouldn't have any issues here.~~
 
 Versions >= 1.0.4 of the frontend application are again able to authenticate against Cumulocity via Basic Auth and OAuth, with OAuth actually being the prefered way. To be able to use OAuth for authentification we have to disable the XSRF-Token validation of Cumulocity for the tenant. Please check on your own if this might be a security concern for you: [Cross-site request forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery). The application will ask if it should disable the XSRF-Token validation for you, if that should be required.
+
 ## TODOs
 - Currently the microservice uses the `PER_TENANT` isolation level. In future I might want to think about solutions to let this microservice run with `MULTI_TENANT` isolation level, so a single microservice instance can be used by multiple tenants to save costs.
 - Create more nodes for simpler integration of Cumulocity.
