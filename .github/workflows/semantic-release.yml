@@ -27,10 +27,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'yarn'
 
-      - name: Install Dependencies
-        run: |
-          npm i -g @semantic-release/changelog@^6.0.3 @semantic-release/exec@^6.0.3 @semantic-release/git@^10.0.1 semantic-release@^20.1.0
+      - name: Install Node.js dependencies
+        run: | 
+          yarn install --frozen-lockfile --immutable --non-interactive --prefer-offline
 
       - name: Release
         env:
