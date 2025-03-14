@@ -1,3 +1,15 @@
+# [2.6.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.5.0...v2.6.0) (2025-03-14)
+
+
+### Bug Fixes
+
+* bump dependencies ([1e03557](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/1e03557b1698179800f6e81e148d50a1334bdd92))
+
+
+### Features
+
+* update node-red logo ([f6daf2c](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/f6daf2c21bfaca5e8c71dbcbe67832261ac4af0c))
+
 # [2.5.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.4.0...v2.5.0) (2025-03-13)
 
 
