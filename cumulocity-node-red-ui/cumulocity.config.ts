@@ -31,7 +31,7 @@ export default {
       }
     ],
     icon: {
-      url: "url(/apps/sag-ps-iot-pkg-node-red-ui/assets/app-icon.png)"
+      url: "url(/apps/sag-ps-iot-pkg-node-red-ui/assets/node-red-icon.svg)"
     }
   },
   buildTime: {
