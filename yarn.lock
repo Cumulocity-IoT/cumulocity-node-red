@@ -2293,20 +2293,6 @@
     chroma-js "3.1.2"
     lodash "4.17.21"
 
-"@c8y/client@1020.26.2":
-  version "1020.26.2"
-  resolved "https://registry.yarnpkg.com/@c8y/client/-/client-1020.26.2.tgz#3fd4154d00ac30c49768b02f267b3e694eab0edd"
-  integrity sha512-eIil2XcLyHPlQqiuzuW1VEwSct8hdq73MLzh+WDmA+9O96+wOzgbRV14aSjbKnYVRfLJTrbVxx6afqw8fWtGFg==
-  dependencies:
-    "@types/cometd" "4.0.8"
-    "@types/node" "18"
-    b2a "1.1.2"
-    cometd "4.0.8"
-    cometd-nodejs-client "1.0.2"
-    cross-fetch "4.0.0"
-    form-data "4.0.0"
-    isomorphic-cometd "1.1.0"
-
 "@c8y/client@1021.38.1":
   version "1021.38.1"
   resolved "https://registry.yarnpkg.com/@c8y/client/-/client-1021.38.1.tgz#04e6637a7cd9168aea1570167b1fc0a959c589c4"
@@ -3058,18 +3044,18 @@
   dependencies:
     eslint-scope "5.1.1"
 
-"@node-red/editor-api@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/editor-api/-/editor-api-4.0.5.tgz#563be58c7e933bf7c16810152cee112f5b9b55aa"
-  integrity sha512-X+c/v+HbAjBefqNPiPKA6k7R+MWuYRKB5+n7I23aF+GYEI/ExbbC4A0IXGKVXE0vrdZb1ffAWl0Xx8jldZMJfA==
+"@node-red/editor-api@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/editor-api/-/editor-api-4.0.9.tgz#dcc17bb9f39c08c8895b4f760e8b689493c75d67"
+  integrity sha512-jGr5fQAXXfxIVM41FZlTbcnelA6vkL9uweX6FjYnu4VPzePfcV61TM3awyTiw0YGTonm/RYPKRpZu3cZ3/pX+w==
   dependencies:
-    "@node-red/editor-client" "4.0.5"
-    "@node-red/util" "4.0.5"
+    "@node-red/editor-client" "4.0.9"
+    "@node-red/util" "4.0.9"
     bcryptjs "2.4.3"
     body-parser "1.20.3"
     clone "2.1.2"
     cors "2.8.5"
-    express "4.21.1"
+    express "4.21.2"
     express-session "1.18.1"
     memorystore "1.6.7"
     mime "3.0.0"
@@ -3083,15 +3069,15 @@
   optionalDependencies:
     "@node-rs/bcrypt" "1.10.4"
 
-"@node-red/editor-client@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/editor-client/-/editor-client-4.0.5.tgz#39b8d18dec08ac950a290bc790a6210715887c28"
-  integrity sha512-ZeM4Nbyg6bCmyWIzKhGjH3VFOmSmuPmFLK7Z7a/8lHY5Qs4fj9GvdWjcjXp+8q030ydVd4WF38PXRMu87GqiaQ==
+"@node-red/editor-client@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/editor-client/-/editor-client-4.0.9.tgz#75805a9f9ff988dfc03d429b77cebb04a2789970"
+  integrity sha512-1XVNVmYtCDkQVKEh1bSzLS0GPjI9GEV5CeFdz/k/zjU4Qe63dmSzc76KmRBaDrjOMpvfaJAdZQ+ZuSqocOv5zA==
 
-"@node-red/nodes@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/nodes/-/nodes-4.0.5.tgz#ffac6d25b0cf5fb80186877d9ad2dbff5569e0b7"
-  integrity sha512-YEIt2KK1/2Z/Had23RXcVH2WMD2nZlIRz2Ds981LUBZr6zpSZDEoKwiyBE1Lqnrrs7dwVYNXS7CA1KjdajzLiQ==
+"@node-red/nodes@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/nodes/-/nodes-4.0.9.tgz#415ce283f5a0da3981ea831e08e76232e3e7c0ae"
+  integrity sha512-gVcaocuAjq1p7XmY5nKmBjyEXcLCQYosj1ZPTRqtABPRdUKSGCfN4Shr9oGBEkwd+HNSWaKia7/GKnow9F63kg==
   dependencies:
     acorn "8.12.1"
     acorn-walk "8.3.4"
@@ -3125,36 +3111,36 @@
     ws "7.5.10"
     xml2js "0.6.2"
 
-"@node-red/registry@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/registry/-/registry-4.0.5.tgz#c1a0e755081b64e939c6ef7309f8feca8c484024"
-  integrity sha512-bAt1gWibjYoIttyi8YPFgWIXNMdNXm1SjGc7Jag7tlDiLrYn0m8MJDO8OyVDp/xzFQ2rePtVZtdoa1SDMhrB2w==
+"@node-red/registry@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/registry/-/registry-4.0.9.tgz#ba30e58f986342851fb62d241b8946ae71c02d34"
+  integrity sha512-hczmbEGVNJm4HX20rvGjxYnEcl9TF3x3hAzKtpr8OWWMWvGS3UHzZPM13c3KeItzg3WN/bap8/12wGRzHE1RdA==
   dependencies:
-    "@node-red/util" "4.0.5"
+    "@node-red/util" "4.0.9"
     clone "2.1.2"
     fs-extra "11.2.0"
     semver "7.6.3"
     tar "7.4.3"
     uglify-js "3.17.4"
 
-"@node-red/runtime@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/runtime/-/runtime-4.0.5.tgz#4ebaad1291b10b95ab5bce9d91603ed751762d5f"
-  integrity sha512-6CDJsY8zUMn+fzgAEEe+rS/FgQEoMPhNZzS1f4QjGn8uLUSyBfrCwxlHQwRCue/s26IxdMKUr7qqJkqnH7ASxw==
+"@node-red/runtime@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/runtime/-/runtime-4.0.9.tgz#aa83d73bb4f4aa8eb5266204b56fb1e0eaceb86f"
+  integrity sha512-frKqZl6VESSgosJcMqu0ADO3p3zO+HNHQSQaqe+BlsPKLmJCZfM82jPXGFf741hoRDvN6naei4QkwdZiHCuRTA==
   dependencies:
-    "@node-red/registry" "4.0.5"
-    "@node-red/util" "4.0.5"
+    "@node-red/registry" "4.0.9"
+    "@node-red/util" "4.0.9"
     async-mutex "0.5.0"
     clone "2.1.2"
-    express "4.21.1"
+    express "4.21.2"
     fs-extra "11.2.0"
     json-stringify-safe "5.0.1"
     rfdc "^1.3.1"
 
-"@node-red/util@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@node-red/util/-/util-4.0.5.tgz#a567f24dade2fb9166c1c5023d14491a28e177c0"
-  integrity sha512-g0czs4jKpWPx7auvBbz9MSCEL/f9/xlQMCHTYB2qbV+rouvBQS3ygaUI9Lqx2n9rYbdFm0BKteWVyznP/Vzhvw==
+"@node-red/util@4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@node-red/util/-/util-4.0.9.tgz#a5b3d746f077ba6dce7f54a634fba3bd007a2a2f"
+  integrity sha512-JAeHlwq7BgNvDyTPzN5uXY03WWJKEnTakYJ4t/Awq1eKjSVLLuGbEZkn5bDI5muhJgHuN0uDOzE9lc86bWUlxQ==
   dependencies:
     fs-extra "11.2.0"
     i18next "21.10.0"
@@ -4250,12 +4236,19 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@18", "@types/node@>=10.0.0", "@types/node@^18":
+"@types/node@*", "@types/node@18", "@types/node@>=10.0.0":
   version "18.19.31"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.19.31.tgz"
   integrity sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==
   dependencies:
     undici-types "~5.26.4"
+
+"@types/node@^20":
+  version "20.17.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.17.24.tgz#2325476954e6fc8c2f11b9c61e26ba6eb7d3f5b6"
+  integrity sha512-d7fGCyB96w9BnWQrOsJtpyiSaBcAYYr75bnK6ZRjDbql2cGLj/3GsL5OYmLPNq76l7Gf2q4Rv9J2o6h5CrD9sA==
+  dependencies:
+    undici-types "~6.19.2"
 
 "@types/node@^22.5.5":
   version "22.13.10"
@@ -5899,13 +5892,6 @@ cronosjs@1.7.1:
   resolved "https://registry.npmjs.org/cronosjs/-/cronosjs-1.7.1.tgz"
   integrity sha512-d6S6+ep7dJxsAG8OQQCdKuByI/S/AV64d9OF5mtmcykOyPu92cAkAnF3Tbc9s5oOaLQBYYQmTNvjqYRkPJ/u5Q==
 
-cross-fetch@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-4.0.0.tgz#f037aef1580bb3a1a35164ea2a848ba81b445983"
-  integrity sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==
-  dependencies:
-    node-fetch "^2.6.12"
-
 cross-fetch@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-4.1.0.tgz#8f69355007ee182e47fa692ecbaa37a52e43c3d2"
@@ -6252,6 +6238,11 @@ dotenv@16.4.5:
   version "16.4.5"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.5.tgz"
   integrity sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==
+
+dotenv@16.4.7:
+  version "16.4.7"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.4.7.tgz#0e20c5b82950140aa99be360a8a5f52335f53c26"
+  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
 
 duplexer2@~0.1.0:
   version "0.1.4"
@@ -6680,10 +6671,10 @@ express-session@1.18.1:
     safe-buffer "5.2.1"
     uid-safe "~2.1.5"
 
-express@4.21.1:
-  version "4.21.1"
-  resolved "https://registry.yarnpkg.com/express/-/express-4.21.1.tgz#9dae5dda832f16b4eec941a4e44aa89ec481b281"
-  integrity sha512-YSFlK1Ee0/GC8QaO91tHcDxJiE/X4FbpAyQWkxAvG6AXCuR65YzK8ua6D9hvi/TzUfZMpc+BwuM1IPw8fmQBiQ==
+express@4.21.2:
+  version "4.21.2"
+  resolved "https://registry.yarnpkg.com/express/-/express-4.21.2.tgz#cf250e48362174ead6cea4a566abef0162c1ec32"
+  integrity sha512-28HqgMZAmih1Czt9ny7qr6ek2qddF4FclbMzwhCREB6OFfH+rXAnuNCwo1/wFvrtbgsQDb4kSbX9de9lFbrXnA==
   dependencies:
     accepts "~1.3.8"
     array-flatten "1.1.1"
@@ -6704,7 +6695,7 @@ express@4.21.1:
     methods "~1.1.2"
     on-finished "2.4.1"
     parseurl "~1.3.3"
-    path-to-regexp "0.1.10"
+    path-to-regexp "0.1.12"
     proxy-addr "~2.0.7"
     qs "6.13.0"
     range-parser "~1.2.1"
@@ -9306,7 +9297,7 @@ node-emoji@^2.2.0:
     emojilib "^2.4.0"
     skin-tone "^2.0.0"
 
-node-fetch@^2.6.12, node-fetch@^2.7.0:
+node-fetch@^2.7.0:
   version "2.7.0"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
@@ -9388,19 +9379,19 @@ node-red-dashboard@~3.6.5:
     serve-static "^1.15.0"
     socket.io "^4.7.4"
 
-node-red@4.0.5:
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/node-red/-/node-red-4.0.5.tgz#773bac25a16b919ed936bf81998503c87fd52c90"
-  integrity sha512-U//K/M/0EJrD80VPGmF+tHoMJVEykBBMgLmKPbKH9m0msXN1O/OC1VpGtyeUAGRwVsNQe0KgFNu6+G4JIguBcA==
+node-red@4.0.9:
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/node-red/-/node-red-4.0.9.tgz#a80c97ef07b7e648bc2244a991a7cf62ddab3b0a"
+  integrity sha512-E4oo64ieP8GGSbdBhNtzDdXDVX5/nxEIJg89TyhpUT7aWLxvn+Q75V+jUGUUd6M3/B1A7vEn6HBmIlGNvgv/9g==
   dependencies:
-    "@node-red/editor-api" "4.0.5"
-    "@node-red/nodes" "4.0.5"
-    "@node-red/runtime" "4.0.5"
-    "@node-red/util" "4.0.5"
+    "@node-red/editor-api" "4.0.9"
+    "@node-red/nodes" "4.0.9"
+    "@node-red/runtime" "4.0.9"
+    "@node-red/util" "4.0.9"
     basic-auth "2.0.1"
     bcryptjs "2.4.3"
     cors "2.8.5"
-    express "4.21.1"
+    express "4.21.2"
     fs-extra "11.2.0"
     node-red-admin "^4.0.1"
     nopt "5.0.0"
@@ -10245,10 +10236,10 @@ path-scurry@^1.11.1:
     lru-cache "^10.2.0"
     minipass "^5.0.0 || ^6.0.2 || ^7.0.0"
 
-path-to-regexp@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.10.tgz#67e9108c5c0551b9e5326064387de4763c4d5f8b"
-  integrity sha512-7lf7qcQidTku0Gu3YDPc8DJ1q7OOucfa/BSsIwjuh56VU7katFvuM8hULfkwB3Fns/rsVF7PwPKVw1sl5KQS9w==
+path-to-regexp@0.1.12:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.12.tgz#d5e1a12e478a976d432ef3c58d534b9923164bb7"
+  integrity sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
@@ -12177,6 +12168,11 @@ undici-types@~5.26.4:
   version "5.26.5"
   resolved "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
+
+undici-types@~6.19.2:
+  version "6.19.8"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-6.19.8.tgz#35111c9d1437ab83a7cdc0abae2f26d88eda0a02"
+  integrity sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==
 
 undici-types@~6.20.0:
   version "6.20.0"

@@ -15,10 +15,10 @@
   "author": "Tristan Bastian",
   "license": "Apache-2.0",
   "dependencies": {
-    "@c8y/client": "1020.26.2"
+    "@c8y/client": "1021.38.1"
   },
   "devDependencies": {
-    "@types/node": "^18",
+    "@types/node": "^20",
     "typescript": "~5.1.3"
   },
   "files": [
