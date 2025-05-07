@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { NodeRedIframeModule } from "../node-red-iframe/node-red-iframe.module";
 import {
   CoreModule,
   hookNavigator,
@@ -11,7 +10,7 @@ import { NodeRedDashboardTabFactory } from "./dashboard-tab.factory";
 import { NodeRedDashboardGuard } from "./dashboard.guard";
 
 @NgModule({
-  imports: [CoreModule, NodeRedIframeModule],
+  imports: [CoreModule],
   declarations: [],
   providers: [
     hookRoute({

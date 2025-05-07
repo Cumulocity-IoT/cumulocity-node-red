@@ -55,7 +55,8 @@ export default {
     copy: [
       { from: "../images", to: "images" },
       { from: "../README.md", to: "README.md" },
-      { from: "../LICENSE", to: "LICENSE.txt" }
+      { from: "../LICENSE", to: "LICENSE.txt" },
+      { from: "../CHANGELOG.md", to: "CHANGELOG.md" }
     ]
   }
 } satisfies ConfigurationOptions;

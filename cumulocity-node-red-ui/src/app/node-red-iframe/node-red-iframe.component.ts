@@ -8,10 +8,13 @@ import {
 import { FetchClient, TenantOptionsService, UserService } from '@c8y/client';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
+import { TitleComponent } from '@c8y/ngx-components'
 
 @Component({
   selector: 'app-node-red-iframe',
   templateUrl: './node-red-iframe.component.html',
+  standalone: true,
+  imports: [TitleComponent]
 })
 export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
   hasRequiredRoles = false;
