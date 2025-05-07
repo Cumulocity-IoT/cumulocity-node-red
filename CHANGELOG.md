@@ -1,3 +1,10 @@
+## [2.6.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.6.0...v2.6.1) (2025-05-07)
+
+
+### Bug Fixes
+
+* only use standalone components to ensure compatibility with WebSDK version 1022.0.0 ([0ab9853](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/0ab98537ecab9706cde9dd450c4c5b791773c63f))
+
 # [2.6.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.5.0...v2.6.0) (2025-03-14)
 
 
