@@ -23,7 +23,7 @@
     }
   },
   "dependencies": {
-    "@c8y/client": "1021.38.1"
+    "@c8y/client": "1021.67.0"
   },
   "author": "Tristan Bastian",
   "license": "Apache-2.0"
