@@ -18,7 +18,7 @@
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
     "@angular/platform-browser": "^18.2.0",
-    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^20.0.2",
     "@angular/router": "^18.2.0",
     "@c8y/bootstrap": "1021.67.0",
     "@c8y/client": "1021.67.0",
