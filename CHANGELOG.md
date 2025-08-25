@@ -1,3 +1,11 @@
+# [2.7.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.6.1...v2.7.0) (2025-08-25)
+
+
+### Features
+
+* upgrade node-red to latest version ([#311](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/311)) ([dc3ca9f](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/dc3ca9fb021bc351c3f2be5eaee11196ca528593))
+* upgrade to websdk v1022 ([#310](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/310)) ([caa08d3](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/caa08d3c2c6b6940e0cad636d78d9328b63322db))
+
 ## [2.6.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.6.0...v2.6.1) (2025-05-07)
 
 
