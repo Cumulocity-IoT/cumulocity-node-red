@@ -226,10 +226,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-browser-dynamic@^19.2.0":
-  version "19.2.14"
-  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-19.2.14.tgz#8d43182a0eea3e167b885caa79057a485e248fe7"
-  integrity sha512-Hfz0z1KDQmIdnFXVFCwCPykuIsHPkr1uW2aY396eARwZ6PK8i0Aadcm1ZOnpd3MR1bMyDrJo30VRS5kx89QWvA==
+"@angular/platform-browser-dynamic@^20.2.3":
+  version "20.2.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-20.2.3.tgz#c93a70d5fd484780af5d6ed97ed6d6606404a488"
+  integrity sha512-uxqLv2yNibd2vf3OObyH4arVfwu+o9FKgkUcnFUdowK31emiZe1nAY8uEe/92JIsMMAoIllI/GAVzWH8dp05mg==
   dependencies:
     tslib "^2.3.0"
 
@@ -3763,9 +3763,10 @@ ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-"angular-gettext-tools@git+https://github.com/rubenv/angular-gettext-tools.git#5a20d5fe2ad768bfd0cac18259b4986346061eda":
+"angular-gettext-tools@https://github.com/rubenv/angular-gettext-tools.git#5a20d5fe2ad768bfd0cac18259b4986346061eda":
   version "2.5.3"
-  resolved "git+https://github.com/rubenv/angular-gettext-tools.git#5a20d5fe2ad768bfd0cac18259b4986346061eda"
+  uid "5a20d5fe2ad768bfd0cac18259b4986346061eda"
+  resolved "https://github.com/rubenv/angular-gettext-tools.git#5a20d5fe2ad768bfd0cac18259b4986346061eda"
   dependencies:
     "@babel/parser" "^7.4.3"
     binary-search "^1.2.0"
