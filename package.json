@@ -30,7 +30,7 @@
     "cumulocity-node-red-ui"
   ],
   "dependencies": {
-    "dotenv": "16.4.7",
+    "dotenv": "17.2.3",
     "node-red": "4.1.0",
     "node-red-dashboard": "~3.6.6"
   },
