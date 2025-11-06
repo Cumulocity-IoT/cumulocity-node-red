@@ -1,3 +1,10 @@
+## [2.7.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.7.0...v2.7.1) (2025-11-06)
+
+
+### Bug Fixes
+
+* bump node red version from 4.1.0 to 4.1.1 ([#331](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/331)) ([ef87194](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/ef87194bbc815e356b2755878a0935a7bb692bee))
+
 # [2.7.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.6.1...v2.7.0) (2025-08-25)
 
 
