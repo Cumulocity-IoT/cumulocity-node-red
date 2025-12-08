@@ -5,10 +5,12 @@ import { NodeRedTabsCheck } from '../models/role-check';
 import { FetchClient } from '@c8y/client';
 
 @Injectable({ providedIn: 'root' })
-export class NodeRedDashboardTabFactory extends NodeRedTabsCheck {
+export class NodeRedDashboardV2TabFactory extends NodeRedTabsCheck {
+  protected override requiredEndpoint = '/service/node-red/dashboard/index.html';
+
   protected tab: Tab = {
-    label: 'Dashboard',
-    path: 'node-red/dashboard',
+    label: 'Dashboard-v2',
+    path: 'node-red/dashboard-v2',
     icon: 'dashboard'
   };
 

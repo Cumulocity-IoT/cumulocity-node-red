@@ -28,6 +28,12 @@ export default {
         module: "NodeRedDashboardModule",
         path: "./src/app/node-red-dashboard/node-red-dashboard.module.ts",
         description: "Adds an UI for viewing Dashboards of Node-RED."
+      },
+      {
+        name: "Node-RED Dashboard V2 Plugin",
+        module: "NodeRedDashboardModuleV2",
+        path: "./src/app/node-red-dashboard-v2/node-red-dashboard-v2.module.ts",
+        description: "Adds an UI for viewing Dashboards of Node-RED. (Requires '@flowfuse/node-red-dashboard' to be installed from Node-RED Palette Manager)."
       }
     ],
     icon: {

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppStateService, Tab } from '@c8y/ngx-components';
 import { NodeRedTabsCheck } from '../models/role-check';
+import { FetchClient } from '@c8y/client';
 
 @Injectable({ providedIn: 'root' })
 export class NodeRedAdminTabFactory extends NodeRedTabsCheck {
@@ -11,7 +12,7 @@ export class NodeRedAdminTabFactory extends NodeRedTabsCheck {
     icon: 'cog'
   };
 
-  constructor(router: Router, appState: AppStateService) {
-    super(router, appState);
+  constructor(router: Router, appState: AppStateService, fetch: FetchClient) {
+    super(router, appState, fetch);
   }
 }

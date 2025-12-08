@@ -3,6 +3,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { CoreModule, RouterModule } from '@c8y/ngx-components';
 import { nodeRedAdminProviders } from './node-red-admin/node-red-admin.module';
 import { nodeRedDashboardProviders } from './node-red-dashboard/node-red-dashboard.module';
+import { nodeRedDashboardV2Providers } from './node-red-dashboard-v2/node-red-dashboard-v2.module';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -10,6 +11,7 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(RouterModule.forRoot()),
     importProvidersFrom(CoreModule.forRoot()),
     ...nodeRedAdminProviders,
-    ...nodeRedDashboardProviders
+    ...nodeRedDashboardProviders,
+    ...nodeRedDashboardV2Providers
   ]
 };
