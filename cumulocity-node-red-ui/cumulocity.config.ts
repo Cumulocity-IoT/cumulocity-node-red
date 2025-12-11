@@ -19,20 +19,20 @@ export default {
     exports: [
       {
         name: "Node-RED Admin Plugin",
-        module: "NodeRedAdminModule",
-        path: "./src/app/node-red-admin/node-red-admin.module.ts",
+        module: "nodeRedAdminProviders",
+        path: "./src/app/node-red-admin.provider.ts",
         description: "Adds an UI for administrating Node-RED."
       },
       {
         name: "Node-RED Dashboard Plugin",
-        module: "NodeRedDashboardModule",
-        path: "./src/app/node-red-dashboard/node-red-dashboard.module.ts",
+        module: "nodeRedDashboardOldProviders",
+        path: "./src/app/node-red-dashboard-old.provider.ts",
         description: "Adds an UI for viewing Dashboards of Node-RED."
       },
       {
         name: "Node-RED Dashboard V2 Plugin",
-        module: "NodeRedDashboardModuleV2",
-        path: "./src/app/node-red-dashboard-v2/node-red-dashboard-v2.module.ts",
+        module: "nodeRedDashboardNewProviders",
+        path: "./src/app/node-red-dashboard-new.provider.ts",
         description: "Adds an UI for viewing Dashboards of Node-RED. (Requires '@flowfuse/node-red-dashboard' to be installed from Node-RED Palette Manager)."
       }
     ],

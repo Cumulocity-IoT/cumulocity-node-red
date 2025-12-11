@@ -1,20 +1,26 @@
-import { AfterViewInit, Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  ViewChild,
+} from '@angular/core';
 import {
   AlertService,
-  AppStateService,
   gettext,
   ModalService,
+  Permissions,
 } from '@c8y/ngx-components';
-import { FetchClient, TenantOptionsService, UserService } from '@c8y/client';
+import { FetchClient, TenantOptionsService } from '@c8y/client';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { TitleComponent } from '@c8y/ngx-components'
+import { TitleComponent } from '@c8y/ngx-components';
 
 @Component({
   selector: 'app-node-red-iframe',
   templateUrl: './node-red-iframe.component.html',
   standalone: true,
-  imports: [TitleComponent]
+  imports: [TitleComponent],
 })
 export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
   hasRequiredRoles = false;
@@ -25,8 +31,7 @@ export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
 
   constructor(
     private route: ActivatedRoute,
-    private appState: AppStateService,
-    private userService: UserService,
+    private permissions: Permissions,
     private alertService: AlertService,
     private client: FetchClient,
     private tenantOptions: TenantOptionsService,
@@ -36,30 +41,19 @@ export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.currentUserSubscription = this.appState.currentUser.subscribe(
-      (user) => {
-        if (user) {
-          if (
-            this.userService.hasAnyRole(user, [
-              'ROLE_NODE_RED_ADMIN',
-              'ROLE_NODE_RED_READ',
-            ])
-          ) {
-            this.hasRequiredRoles = true;
-            this.setupIframe();
-          } else {
-            this.hasRequiredRoles = false;
-            this.alertService.warning(
-              gettext(
-                'You are missing the required roles to access the Node-RED backend.'
-              )
-            );
-          }
-        } else {
-          this.hasRequiredRoles = false;
-        }
-      }
-    );
+    if (
+      this.permissions.hasAnyRole(['ROLE_NODE_RED_ADMIN', 'ROLE_NODE_RED_READ'])
+    ) {
+      this.hasRequiredRoles = true;
+      this.setupIframe();
+    } else {
+      this.hasRequiredRoles = false;
+      this.alertService.warning(
+        gettext(
+          'You are missing the required roles to access the Node-RED backend.'
+        )
+      );
+    }
   }
 
   ngOnDestroy(): void {
