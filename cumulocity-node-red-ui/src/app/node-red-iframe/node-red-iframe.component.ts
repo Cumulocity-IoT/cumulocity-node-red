@@ -14,7 +14,8 @@ import {
 import { FetchClient, TenantOptionsService } from '@c8y/client';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
-import { TitleComponent } from '@c8y/ngx-components';
+import { TitleComponent } from '@c8y/ngx-components'
+import { NodeRedTrackingService } from '../node-red-tracking.service';
 
 @Component({
   selector: 'app-node-red-iframe',
@@ -35,7 +36,8 @@ export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
     private alertService: AlertService,
     private client: FetchClient,
     private tenantOptions: TenantOptionsService,
-    private modalService: ModalService
+    private modalService: ModalService,
+    private tracking: NodeRedTrackingService
   ) {
     this.iframeURL = this.route.snapshot.data['src'];
   }
@@ -133,6 +135,7 @@ export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
       // nothing to do, modal was canceled.
       return;
     }
+    this.tracking.triggerGainSightEvent('disable-xsrf-token-validation');
     try {
       await this.tenantOptions.update({
         category: 'jwt',
@@ -149,6 +152,9 @@ export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
   }
 
   private setIframeUrl() {
+    this.tracking.triggerGainSightEvent('set-iframe-url', {
+      action: this.iframeURL
+    });
     // set iFrame's SRC attribute
     const iframe: HTMLIFrameElement | undefined = this.iframe?.nativeElement;
     if (iframe) {
