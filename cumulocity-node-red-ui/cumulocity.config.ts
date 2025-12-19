@@ -27,7 +27,7 @@ export default {
         name: "Node-RED Dashboard Plugin",
         module: "nodeRedDashboardOldProviders",
         path: "./src/app/node-red-dashboard-old.provider.ts",
-        description: "Adds an UI for viewing Dashboards of Node-RED."
+        description: "Adds an UI for viewing Dashboards of Node-RED. (Requires 'node-red-dashboard' to be installed from Node-RED Palette Manager)"
       },
       {
         name: "Node-RED Dashboard V2 Plugin",
