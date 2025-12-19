@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.7.1...v3.0.0) (2025-12-19)
+
+
+### Features
+
+* add gainsight tracking ([#333](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/333)) ([cecbaa9](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/cecbaa9960145f2b3a23d95bd3c604565ba0522d))
+* add support for different dashboarding package (`@flowfuse/node-red-dashboard`) ([#332](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/332)) ([4811f96](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/4811f963b190e03c950564c658330c2caa9c8400))
+
+
+### BREAKING CHANGES
+
+* The dashboarding of `node-red-dashboard` package has been deprecated for a while by Node-RED. There is an unofficial successor: `@flowfuse/node-red-dashboard`. With this change the `node-red-dashboard` package will no longer be included by default. If users require dashboarding functionality they will have add one of either `node-red-dashboard` or `@flowfuse/node-red-dashboard` packages via Node-REDs palette manager.
+
 ## [2.7.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.7.0...v2.7.1) (2025-11-06)
 
 
