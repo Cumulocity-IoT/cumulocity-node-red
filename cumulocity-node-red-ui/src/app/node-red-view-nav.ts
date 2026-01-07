@@ -11,7 +11,7 @@ import {
 import { filter, firstValueFrom, map, Observable, take } from 'rxjs';
 import { NODE_RED_VIEW_DETAILS } from './node-red-view.model';
 import { FetchClient } from '@c8y/client';
-import { default as config } from '../../cumulocity.config';
+import { contextPath } from '../../cumulocity.config';
 
 @Injectable({ providedIn: 'root' })
 export class NodeRedEndpointAvailabilityService {
@@ -50,8 +50,8 @@ export class NodeRedViewTabFactory implements TabFactory {
   private permissions = inject(Permissions);
 
   async get(activatedRoute?: ActivatedRoute): Promise<Tab | Tab[]> {
-    console.log('contextPath', this.appState.state?.app?.contextPath, 'configContextPath', config.runTime.contextPath);
-    if (this.appState.state?.app?.contextPath !== config.runTime.contextPath) {
+    console.log('contextPath', this.appState.state?.app?.contextPath, 'configContextPath', contextPath);
+    if (this.appState.state?.app?.contextPath !== contextPath) {
       return [];
     }
 
