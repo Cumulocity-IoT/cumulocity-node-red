@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.0.0...v3.0.1) (2026-01-07)
+
+
+### Bug Fixes
+
+* remove wrong readme file in order to have correct readme included ([11ba011](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/11ba011d7285e282ee4d22ab56f6329e33ef4b2d))
+
 # [3.0.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v2.7.1...v3.0.0) (2025-12-19)
 
 
