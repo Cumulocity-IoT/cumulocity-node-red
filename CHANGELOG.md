@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.0.1...v3.0.2) (2026-01-07)
+
+
+### Bug Fixes
+
+* ensure deployed blueprint actually also loads all plugins ([8195539](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/8195539ac9419b722baade219dc11f6ac6bd0f3d))
+
 ## [3.0.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.0.0...v3.0.1) (2026-01-07)
 
 
