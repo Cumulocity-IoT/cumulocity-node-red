@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "dotenv": "16.4.7",
-    "node-red": "4.1.2"
+    "node-red": "4.1.4"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
