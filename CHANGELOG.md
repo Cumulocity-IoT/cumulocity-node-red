@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.0.2...v3.1.0) (2026-02-06)
+
+
+### Bug Fixes
+
+* upgrade node red to v4.1.4 ([#340](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/340)) ([20126b1](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/20126b184568d57ce117b1d969e92e89f0e97206))
+
+
+### Features
+
+* update to websdk version 1023 and nodejs 24 ([#339](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/339)) ([bbeca18](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/bbeca189af0d5bab0fab15e7ef0c0296f08a373e))
+
 ## [3.0.2](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.0.1...v3.0.2) (2026-01-07)
 
 
