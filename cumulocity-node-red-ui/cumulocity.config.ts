@@ -20,6 +20,11 @@ export default () => {
       dynamicOptionsUrl: true,
       isPackage: true,
       package: 'blueprint',
+      blueprintDeploymentOptions: {
+        name: 'NodeRED',
+        contextPath: 'node-red-ui',
+        key: 'node-red-ui-app-key',
+      },
       exports: [
         {
           name: 'Node-RED Admin Plugin',
