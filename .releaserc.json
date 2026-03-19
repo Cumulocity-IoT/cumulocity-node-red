@@ -8,7 +8,8 @@
         "preset": "angular",
         "releaseRules": [
           { "type": "test", "scope": "fix", "release": "patch" },
-          { "type": "ci", "scope": "fix", "release": "patch" }
+          { "type": "ci", "scope": "fix", "release": "patch" },
+          { "type": "chore", "scope": "fix", "release": "patch" }
         ]
       }
     ],
