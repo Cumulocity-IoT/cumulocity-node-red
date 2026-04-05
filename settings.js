@@ -1,6 +1,8 @@
 
 const c8yClientLib = require('@c8y/client');
 
+const customTokenHeader = 'x-c8y-node-red-token';
+
 module.exports = {
     // the tcp port that the Node-RED web server is listening on
     uiPort: process.env.SERVER_PORT || 80,
@@ -33,6 +35,7 @@ module.exports = {
         ui: true
     },
     httpAdminMiddleware: async function(req, res, next) {
+        req.headers[customTokenHeader] = undefined; // clear custom token header;
         try {
             // health endpoint for c8y
             if (req.url === '/health' && req.method === 'GET') {
@@ -42,6 +45,7 @@ module.exports = {
 
             // for local development
             if (process.env.SKIP_ACCESS_CHECK) {
+                req.headers[customTokenHeader] = 'SKIP_ACCESS_CHECK:*';
                 next();
                 return;
             }
@@ -67,17 +71,29 @@ module.exports = {
             }
             
             const {data: user} = await client.user.current();
-            if (req.method !== 'GET') {
-                if (client.user.hasAllRoles(user, ['ROLE_NODE_RED_ADMIN'])) {
-                    next();
-                    return;
-                }
-            } else if (client.user.hasAnyRole(user, ['ROLE_NODE_RED_ADMIN', 'ROLE_NODE_RED_READ'])) {
-                next();
+            let userName = user.id;
+            if (user.firstName && user.lastName) {
+                userName = `${user.firstName} ${user.lastName}`;
+            } else if (user.firstName && !user.lastName) {
+                userName = user.firstName;
+            } else if (!user.firstName && user.lastName) {
+                userName = user.lastName;
+            }
+
+            let permission = '';
+            if (client.user.hasAllRoles(user, ['ROLE_NODE_RED_ADMIN'])) {
+                permission = '*'
+            } else if (client.user.hasAllRoles(user, ['ROLE_NODE_RED_READ'])) {
+                permission = 'read';
+            }
+
+            if (!permission) {
+                res.status(403).json({error: 'Access denied', message: 'You do not have permission to access this resource.'}).send();
                 return;
             }
-    
-            res.sendStatus(403);
+
+            req.headers[customTokenHeader] = `${userName}:${permission}`;
+            next();
             return;
         } catch(e) {
             console.log(e);
@@ -87,6 +103,17 @@ module.exports = {
             }
             res.sendStatus(500);
             return;
+        }
+    },
+
+    adminAuth: {
+        tokens: async function(token) {
+            const [username, permissions] = token.split(':');
+            return {username, permissions};
+        },
+        tokenHeader: customTokenHeader,
+        default: async function () {
+            return {username: "anonymous", permissions: "read"};
         }
     },
 
