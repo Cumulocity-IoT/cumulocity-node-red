@@ -4,6 +4,7 @@ import {
   ElementRef,
   OnDestroy,
   ViewChild,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import {
   AlertService,
@@ -21,6 +22,7 @@ import { NodeRedTrackingService } from '../node-red-tracking.service';
   selector: 'app-node-red-iframe',
   templateUrl: './node-red-iframe.component.html',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   imports: [TitleComponent],
 })
 export class NodeRedIframeComponent implements OnDestroy, AfterViewInit {
