@@ -1,3 +1,15 @@
+# [3.2.0](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.1.2...v3.2.0) (2026-08-31)
+
+
+### Bug Fixes
+
+* bump angular and Web SDK version ([#359](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/359)) ([16c986f](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/16c986fd8370350082cd18dbb30ae2c5cba9fd50))
+
+
+### Features
+
+* bump to nodered v5 ([#361](https://github.com/Cumulocity-IoT/cumulocity-node-red/issues/361)) ([977ddcc](https://github.com/Cumulocity-IoT/cumulocity-node-red/commit/977ddcc1f5b918ec106eda64473fd9f4d6ea5915))
+
 ## [3.1.2](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.1.1...v3.1.2) (2026-04-01)
 
 ## [3.1.1](https://github.com/Cumulocity-IoT/cumulocity-node-red/compare/v3.1.0...v3.1.1) (2026-03-19)
